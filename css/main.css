@@ -1,5 +1,5 @@
 :root {
-    --dark-green: #004B23;
+    --dark-green: #007445;
     /* 0, 75, 35*/
     --bright-green: #38B000;
     --light-green: rgba(0, 75, 35, 0.3);
@@ -151,28 +151,19 @@ footer {
     color: var(--dark-green);
     font-family: sans-serif;
     width: 100%;
-}
-
-footer a {
-    color: var(--dark-green);
-    text-decoration: ;
-}
-
-.footer {
-    display: flex;
+     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
 }
 
-footer .data {
-    width: 200px;
+footer a {
+    color: var(--dark-green);
 }
 
-footer .nav {
-    width: 700px;
-}
 
-footer .nav a {
+
+
+footer a {
     margin: 5px 0;
     text-underline-position: under;
     border: 1px solid var(--dark-green);
@@ -183,12 +174,12 @@ footer .nav a {
     transition: transform 2s;
 }
 
-footer .nav a .arrow {
+footer a .arrow {
     transition: transform .5s ease;
 }
 
 
-footer .nav a:hover .arrow {
+footer a:hover .arrow {
     display: inline-block;
     transform: rotate(-45deg);
 }
@@ -206,7 +197,7 @@ body {
     background-image: url(../imgs/waves.svg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: center -20px;
     background-attachment: fixed;
 }
 
@@ -254,15 +245,27 @@ body {
 
     footer {
         position: relative;
-        height: 180px;
+        height: 180px;        
     }
 
-    footer .data {
-        margin: 20px 10px;
-        padding-bottom: 15px;
-        width: 90%;
-        border-bottom: 1px solid var(--dark-green);
+    footer a {
+        width: 80%;
+        text-align: center;
+        margin: 10px auto;
+        display: block;
     }
+
+    body {
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    background-image: url(../imgs/h-wave.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 5vh;
+    background-attachment: fixed;    
+}
+
 }
 
 .hide {

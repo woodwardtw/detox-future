@@ -43,7 +43,7 @@ sup {
 
 h2 {
     font-size: 2em;
-    padding: 20px 30px;
+    padding: 20px 30px 20px 0;
 }
 
 p,
@@ -170,7 +170,9 @@ footer a {
 footer a {
     margin: 5px 0;
     text-underline-position: under;
-    border: 2px solid var(--blue);
+    border: 2px solid #000;
+    box-shadow: var(--purple) -16px 0px, 
+                var(--blue) -32px 0px;
     padding: 5px 10px;
     text-decoration: none;
     transition: all .5s ease;

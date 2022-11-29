@@ -2,10 +2,10 @@
 
 //from https://stackoverflow.com/questions/14341156/calculating-page-load-time-in-javascript
 window.onload = function () {
-    const loadTime = window.performance.timing.domContentLoadedEventEnd-window.performance.timing.navigationStart; 
-    console.log('Page load time is '+ loadTime);
-    const speed = document.querySelector('#speed')
-    speed.innerHTML = loadTime + ' ms';
+    // const loadTime = window.performance.timing.domContentLoadedEventEnd-window.performance.timing.navigationStart; 
+    // console.log('Page load time is '+ loadTime);
+    // const speed = document.querySelector('#speed')
+    // speed.innerHTML = loadTime + ' ms';
     getDetoxPosts();
 }
 

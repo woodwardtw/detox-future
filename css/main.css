@@ -6,6 +6,8 @@
     --light-green: rgba(0, 75, 35, 0.3);
     --bg-green: rgba(221, 229, 219, 1);
     --footerlink: #000;
+    --purple: #722257;
+    --yellow: #f2a53b;
 }
 
 body,
@@ -51,7 +53,7 @@ li {
     line-height: 1.3em;
 }
 
-.header {
+.header-img {
     width:100%;
     height: auto;
 }
@@ -171,18 +173,14 @@ footer a {
     border: 2px solid var(--blue);
     padding: 5px 10px;
     text-decoration: none;
-    transform: rotate(0deg);
-    transition: transform 2s ease;
+    transition: all .5s ease;
+    font-size: 1.2rem;
+    width: 200px;
+    text-align: center;
 }
 
-footer a .arrow {
-    transition: transform .5s ease;
-}
-
-
-footer a:hover .arrow {
-    display: inline-block;
-    transform: rotate(-45deg);
+footer a:hover{
+    background-color: var(--yellow);
 }
 
 
@@ -190,16 +188,15 @@ body {
     padding: 0;
     margin: 0;
     background-color: #fff;
-    /*background-image: url(../imgs/h-wave.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center 20vh;
-    background-attachment: fixed;*/
     background-image: url(../imgs/waves.svg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center -20px;
     background-attachment: fixed;
+}
+
+.mobile-header {
+    display: none;
 }
 
 @media only screen and (max-width: 600px) {
@@ -210,6 +207,17 @@ body {
 
     h2 {
         font-size: 1.8em;
+    }
+
+    .header-img {
+        display: none;
+    }
+    .mobile-header {
+        display: block;
+        width: 100%;
+        height: auto;
+        padding: 30px 0 30px 0;
+        background-color: #fff;
     }
 
     .container {
@@ -246,7 +254,7 @@ body {
 
     footer {
         position: relative;
-        height: 180px;  
+        height: 220px;  
         width: auto;      
     }
 

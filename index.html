@@ -29,14 +29,15 @@ https://dlinq.middcreate.net/
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Digital Detox - 2022 Alternate Futures</title>
+        <title>Digital Detox - 2023 Alternate Futures</title>
         <meta name="description" content="Digital Detox version 5 is focused on the ecological impact of tech.">
         <meta name="viewport" content="width=device-width, initial-scale=1">      	
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
     	<div class="header">
-    		<img src="imgs/full.svg" class="header">
+    		<img src="imgs/full.svg" class="header-img">
+    		<img src="imgs/df.svg" class="mobile-header">
     	</div>
      <div class="container">
 		  <div class="col-one">
@@ -84,7 +85,6 @@ https://dlinq.middcreate.net/
 	 </footer>
 <!-- 	 <script type="text/javascript" src="js/main.js"></script>
  -->	 
- <script type="text/javascript">
-	function getDetoxPosts(){const e=document.querySelector("#destination");fetch("json/detox.json").then(function(e){return e.json()}).then(function(n){n.forEach(function(n,o){console.log(n);let t=n.title.rendered.replace("DD ","");console.log(t);n.excerpt.rendered;let i=n.id;e.innerHTML=e.innerHTML+`<li><a href="./post.html?id=${i}">${t}</a></li>`})})}window.onload=function(){const e=window.performance.timing.domContentLoadedEventEnd-window.performance.timing.navigationStart;console.log("Page load time is "+e),document.querySelector("#speed").innerHTML=e+" ms",getDetoxPosts()};	 </script>
+ <script type="text/javascript" src="../js/main.js"></script>
     </body>
 </html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html class='no-js' lang='EN'>
+<head>
+<meta charset='utf-8'>
+<meta http-equiv='x-ua-compatible' content='ie=edge'>
+<title>Digital Detox - Environmental</title>
+<meta name='description' content='Digital Detox version 5 is focused on the ecological impact of tech.'>
+<meta name='viewport' content='width=device-width,initial-scale=1'>
+<link rel='stylesheet' href='css/main.css?v=2'>
+</head>
+<body>
+<h1><a href='./'>Digital Detox <sup>v5</sup></a></h1>
+<div class='container' id='single'>
+<div class='col-one'>
+<h2 id='post-title'></h2>
+<div class='about' id='post-body'>
+</div>
+</div>
+<div class='col-two explore'>
+<div id='action'>
+</div>
+<div id='read'>
+</div>
+</div>
+</div>
+<footer>
+<div class='footer'>
+<div class='data'>
+<div class='speed'>Speed: <span id='speed'></span></div>
+</div>
+<div class='nav'>
+<a href='https://signup.e2ma.net/signup/1961828/1809196/' class='btn-footer'>Sign up <span class='arrow'>&#8599;</span></a>
+<a href='https://dlinq.middcreate.net/digitaldetox/' class='btn-footer'>Previous Detoxes <span class='arrow'>&#8599;</span></a>
+<a href='https://dlinq.middcreate.net' class='btn-footer'>DLINQ <span class='arrow'>&#8599;</span></a>
+<a href='https://middlebury.edu' class='btn-footer'>Middlebury College <span class='arrow'>&#8599;</span></a>
+</div>
+</div>
+</footer>
+<script>function getDetoxPost(){const e=window.location.search,i=new URLSearchParams(e);document.querySelector("#destination"),fetch("json/detox.json").then(function(e){return e.json()}).then(function(e){e.forEach(function(e,n){var o,t,r,c;console.log(e),i.get("id")==e.id&&(o=e.title.rendered,t=e.content.rendered,r=e.acf.take_action,c=e.acf.keep_reading,e.detox_author,document.querySelector("#post-title").innerHTML=o,document.querySelector("#post-body").innerHTML=t,document.querySelector("#action").innerHTML="<h2>Take<br>Action</h2>"+r,document.querySelector("#read").innerHTML="<h2>Read<br>More</h2>"+c)})})}window.onload=function(){var e=window.performance.timing.domContentLoadedEventEnd-window.performance.timing.navigationStart;console.log("Page load time is "+e),document.querySelector("#speed").innerHTML=e+" ms",getDetoxPost()}</script>
+</body>
+</html>

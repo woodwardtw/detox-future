@@ -1,0 +1,64 @@
+<!doctype html>
+<html class='no-js' lang='EN'>
+<head>
+<meta charset='utf-8'>
+<meta http-equiv='x-ua-compatible' content='ie=edge'>
+<title>Digital Detox - Digital Technologies & the Environment</title>
+<meta name='description' content='Digital Detox version 6 is focused on alternate digital futures.'>
+<meta name='viewport' content='width=device-width,initial-scale=1'>
+<link rel='stylesheet' href='css/main.css'>
+</head>
+<body>
+<h1>Digital Detox <sup>v5</sup></h1>
+<div class='container'>
+<div class='col-one'>
+<h2>Digital Technologies & the Environment</h2>
+<div class='about'>
+<p>
+Digital Detox is an initiative that helps participants to reflect on and re-evaluate the role technology plays in their lives, with the aim of reducing the toxicity and harms brought on by technology. Participants receive 2 email newsletters each week during the month of January. The detox newsletters include reflections, helpful resources, and strategies to take action.
+</p>
+<p>
+As we launch our fifth year of the Digital Detox, DLINQ is venturing into a less familiar space for our digital learning experts—how digital learning and technologies impact the Earth and our relationship with it. This venturing comes from a place of deep concern for our planet, and wonderings about our own roles in the current and future climate emergency.</p>
+<div class='wonder'>
+<h3>We wonder:</h3>
+<ul class='highlight-list'>
+<li>How does our digital learning work exacerbate climate change and its impacts?</li>
+<li>How might we rethink what we do as a group, as part of an institution that is so focused on environmental action?</li>
+<li>How might digital technologies support the work of environmental action, and how do we think about their benefits and trade-offs?</li>
+</ul>
+</div>
+<p>
+Through this detox, we’ll share what we learn in ways that invite others to reflect on the impact of their technology use on the environment. We will turn often to climate experts to help us make sense of our wonderings and questions. We will also look to you, our participants, to share your expertise on these topics. We invite you to join us on these ventures into the intersections and impacts of technology and digital learning on environmental issues and action, and to share your thoughts.
+</p>
+<a class='btn btn-detox' href='https://signup.e2ma.net/signup/1961828/1809196/'>Sign up for the 2022 Digital Detox</a>
+</div>
+</div>
+<div class='col-two explore'>
+<h2>Digital Detox<br>Posts</h2>
+<p>Links to Digital Detox posts will appear below as they are written.</p>
+<ul id='destination'>
+</ul>
+</div>
+</div>
+<footer>
+<div class='footer'>
+<div class='data'>
+<div class='size'>
+Size: 187 kb
+</div>
+<div class='speed'>
+Speed: <span id='speed'></span>
+</div>
+<a href='https://www.websitecarbon.com/website/dlinq-middcreate-net-detox-2022/' class='so-what' aria-label='So what? Why care about page size and speed?'>?</a>
+</div>
+<div class='nav'>
+<a href='https://signup.e2ma.net/signup/1961828/1809196/' class='btn-footer'>Sign up <span class='arrow'>&#8599;</span></a>
+<a href='https://dlinq.middcreate.net/digitaldetox/' class='btn-footer'>Previous Detoxes <span class='arrow'>&#8599;</span></a>
+<a href='https://dlinq.middcreate.net' class='btn-footer'>DLINQ <span class='arrow'>&#8599;</span></a>
+<a href='https://middlebury.edu' class='btn-footer'>Middlebury College <span class='arrow'>&#8599;</span></a>
+</div>
+</div>
+</footer>
+<script>function getDetoxPosts(){const t=document.querySelector("#destination");fetch("json/detox.json").then(function(e){return e.json()}).then(function(e){e.forEach(function(e,n){console.log(e);var o=e.title.rendered.replace("DD ","");console.log(o),e.excerpt.rendered;e=e.id;t.innerHTML=t.innerHTML+`<li><a href="./post.html?id=${e}">${o}</a></li>`})})}window.onload=function(){var e=window.performance.timing.domContentLoadedEventEnd-window.performance.timing.navigationStart;console.log("Page load time is "+e),document.querySelector("#speed").innerHTML=e+" ms",getDetoxPosts()}</script>
+</body>
+</html>

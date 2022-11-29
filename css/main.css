@@ -1,9 +1,11 @@
 :root {
     --dark-green: #007445;
     /* 0, 75, 35*/
+    --blue: #329da5;
     --bright-green: #38B000;
     --light-green: rgba(0, 75, 35, 0.3);
     --bg-green: rgba(221, 229, 219, 1);
+    --footerlink: #000;
 }
 
 body,
@@ -145,19 +147,19 @@ footer {
     bottom: 0;
     left: 0;
     display: block;
-    background-color: rgba(221, 229, 219, 1);
+    background-color: #fff;
     height: 40px;
     padding: 10px;
-    color: var(--dark-green);
     font-family: sans-serif;
     width: 100%;
-     display: flex;
+    display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    border-top: 2px solid #000;
 }
 
 footer a {
-    color: var(--dark-green);
+    color: var(--footerlink);
 }
 
 
@@ -166,12 +168,11 @@ footer a {
 footer a {
     margin: 5px 0;
     text-underline-position: under;
-    border: 1px solid var(--dark-green);
+    border: 2px solid var(--blue);
     padding: 5px 10px;
-    border-radius: 4px;
     text-decoration: none;
     transform: rotate(0deg);
-    transition: transform 2s;
+    transition: transform 2s ease;
 }
 
 footer a .arrow {
@@ -245,7 +246,8 @@ body {
 
     footer {
         position: relative;
-        height: 180px;        
+        height: 180px;  
+        width: auto;      
     }
 
     footer a {

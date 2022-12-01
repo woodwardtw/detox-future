@@ -31,8 +31,8 @@ function getDetoxPost(){
         document.querySelector('#post-title').innerHTML = title;
         //document.querySelector('#author').innerHTML = 'By ' + author;
         document.querySelector('#post-body').innerHTML = body;
-        document.querySelector('#action').innerHTML = `<h2>Take<br>Action</h2>${action}`;
-        document.querySelector('#read').innerHTML = `<h2>Read<br>More</h2>${read}`;
+        document.querySelector('#action').innerHTML = `<h2>Take Action</h2>${action}`;
+        document.querySelector('#read').innerHTML = `<h2>Read More</h2>${read}`;
      }
      
 	});

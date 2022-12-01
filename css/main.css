@@ -144,6 +144,7 @@ li {
     box-shadow: var(--yellow) 0px 5px,
         var(--blue) 0px 10px,
         var(--purple) 0px 15px;
+    transform: scale(1.02);
 }
 
 .nav .btn-footer {
@@ -196,7 +197,7 @@ footer a:hover{
     box-shadow: var(--purple) -16px 0px, 
                 var(--blue) -32px 0px,
                 var(--yellow) -48px 0px;
-    text-align: right;
+                transform: scale(1.02);
 }
 
 

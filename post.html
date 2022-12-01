@@ -55,23 +55,14 @@ https://dlinq.middcreate.net/
 		  </div>
 	 </div>
 	 <footer>
-	 	<div class="footer">
-	 		<div class="data">
-	 			<!-- <div class="size">File size: 187 kb</div> -->
-	 			<div class="speed">Speed: <span id="speed"></span></div>
-	 		</div>
-	 		<div class="nav">
 	 			<a href="https://signup.e2ma.net/signup/1961828/1809196/" class="btn-footer">Sign up <span class="arrow">&#8599;</span></a>
 	 			<a href="https://dlinq.middcreate.net/digitaldetox/" class="btn-footer">Previous Detoxes <span class="arrow">&#8599;</span></a>
 	 			<a href="https://dlinq.middcreate.net" class="btn-footer">DLINQ <span class="arrow">&#8599;</span></a>
 	 			<a href="https://middlebury.edu" class="btn-footer">Middlebury College <span class="arrow">&#8599;</span></a>	 			
-	 		</div>
-	 	</div>
 	 </footer>
 <!-- 	 <script type="text/javascript" src="js/post.js"></script>
  -->    
- 	<script type="text/javascript">
- 		function getDetoxPost(){const e=window.location.search,n=new URLSearchParams(e);document.querySelector("#destination");fetch("json/detox.json").then(function(e){return e.json()}).then(function(e){e.forEach(function(e,o){if(console.log(e),n.get("id")==e.id){let n=e.title.rendered,o=e.content.rendered,t=e.acf.take_action,r=e.acf.keep_reading;e.detox_author;document.querySelector("#post-title").innerHTML=n,document.querySelector("#post-body").innerHTML=o,document.querySelector("#action").innerHTML=`<h2>Take<br>Action</h2>${t}`,document.querySelector("#read").innerHTML=`<h2>Read<br>More</h2>${r}`}})})}window.onload=function(){const e=window.performance.timing.domContentLoadedEventEnd-window.performance.timing.navigationStart;console.log("Page load time is "+e),document.querySelector("#speed").innerHTML=e+" ms",getDetoxPost()};
+ 	<script type="text/javascript" src="js/post.js">
  	</script>
 	</body>
 </html>

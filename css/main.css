@@ -59,7 +59,7 @@ li {
 }
 
 .container {
-    margin: 30px 30px 150px 30px;
+    margin: 30px 6vw 150px 6vw;
     padding: 100px;
     display: flex;
     flex-flow: row wrap;
@@ -77,8 +77,12 @@ li {
     width: 400px;
 }
 
+#destination {
+    margin: 80px 0;
+}
+
 .explore ul li {
-    margin-bottom: 35px;
+    margin: 55px 0;
     display: block;
     transition: all ease .6s;
     padding: 20px 15px 15px 40px;
@@ -127,14 +131,19 @@ li {
     text-align: center;
     padding: 10px 15px;
     margin: 35px auto;
+    color: var(--dark-green);
+    text-decoration: none;
+    font-size: 1.3rem;
+    border-radius: 50px;
+    border: 5px solid var(--dark-green);
+    font-weight: 700;
+    transition: all .4s ease;
 }
 
 .btn-detox:hover {
-    box-shadow: rgba(0, 75, 35, 0.4) -5px 5px,
-        rgba(0, 75, 35, 0.3) -10px 10px,
-        rgba(0, 75, 35, 0.2) -15px 15px,
-        rgba(0, 75, 35, 0.1) -20px 20px,
-        rgba(0, 75, 35, 0.05) -25px 25px;
+    box-shadow: var(--yellow) 0px 5px,
+        var(--blue) 0px 10px,
+        var(--purple) 0px 15px;
 }
 
 .nav .btn-footer {
@@ -171,18 +180,23 @@ footer a {
     margin: 5px 0;
     text-underline-position: under;
     border: 2px solid #000;
-    box-shadow: var(--purple) -16px 0px, 
-                var(--blue) -32px 0px;
+  /*  box-shadow: var(--purple) -16px 0px, 
+                var(--blue) -32px 0px;*/
     padding: 5px 10px;
     text-decoration: none;
     transition: all .5s ease;
     font-size: 1.2rem;
     width: 200px;
     text-align: center;
+    background-color: var(--yellow);
 }
 
 footer a:hover{
-    background-color: var(--yellow);
+    background-color: #fff;
+    box-shadow: var(--purple) -16px 0px, 
+                var(--blue) -32px 0px,
+                var(--yellow) -48px 0px;
+    text-align: right;
 }
 
 

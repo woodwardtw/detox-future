@@ -19,6 +19,7 @@ function getDetoxPosts(){
   return response.json();
 })
   .then(function(data) {
+    console.log(data)
   // GOOD
   data.forEach(function (value, i) {
      let title = value.title.rendered;

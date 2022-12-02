@@ -28,7 +28,7 @@ h4 {
 }
 
 h1 {
-    font-size: 5.5em;
+    font-size: 4.5em;
     line-height: 1.1;
     font-weight: 700;
 }
@@ -84,30 +84,32 @@ a {
 
 #destination {
     margin: 80px 0;
+    padding-left: 0;
 }
 
 .explore ul li {
-    margin: 55px 0;
-    display: block;
-    transition: all ease .6s;
-    padding: 20px 15px 15px 40px;
-    box-shadow: rgba(0, 75, 35, 0.4) -5px 3px;
-    border: 1px solid rgba(0, 75, 35, 0.4);
-    border-radius: 5px;
+   list-style: none;
+   padding-left: 0;
+   max-width: 100%;
 }
 
 .explore a {
-    color: var(--dark-green);
+    margin: 55px 0;
+    transition: all ease .6s;
+    padding: 20px 30px;
+    border: 3px solid var(--purple);
+    border-radius: 120px;
+    color: var(--purple);
     font-size: 1.3em;
     font-family: sans-serif;
-    display: inline-block;
-    width: 100%;
+    display: block;
+    width: 80%;
     height: auto;
     text-decoration: none;
     position: relative;
 }
 
-.explore a:after {
+/*.explore a:after {
     content: '\2197';
     display: inline-block;
     position: absolute;
@@ -118,13 +120,12 @@ a {
     font-size: .6em;
     color: rgba(0, 75, 35, 0.4);
 }
-
-.explore li:hover {
-    box-shadow: rgba(0, 75, 35, 0.4) -5px 5px,
-        rgba(0, 75, 35, 0.3) -10px 10px,
-        rgba(0, 75, 35, 0.2) -15px 15px,
-        rgba(0, 75, 35, 0.1) -20px 20px,
-        rgba(0, 75, 35, 0.05) -25px 25px;
+*/
+.explore a:hover {
+      box-shadow: var(--blue) 16px 0px, 
+                var(--yellow) 32px 0px,
+                var(--dark-green) 48px 0px;
+                transform: scale(1.02);
 }
 
 .excerpt {
@@ -195,6 +196,7 @@ footer a {
     width: 200px;
     text-align: center;
     background-color: var(--yellow);
+    border-radius: 80px;
 }
 
 footer a:hover{
@@ -303,6 +305,7 @@ blockquote:after {
     .explore ul li a {
         font-size: .9em;
         line-height: 1.2em;
+        max-width: 80%;
     }
 
     .explore a:after {

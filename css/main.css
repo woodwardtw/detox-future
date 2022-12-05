@@ -10,6 +10,7 @@
     --yellow: #f2a53b;
 }
 
+
 body,
 ul,
 ol,
@@ -96,7 +97,7 @@ a {
 .explore a {
     margin: 55px 0;
     transition: all ease .6s;
-    padding: 20px 30px;
+    padding: 20px 0px 20px 40px;
     border: 3px solid var(--purple);
     border-radius: 120px;
     color: var(--purple);
@@ -122,9 +123,9 @@ a {
 }
 */
 .explore a:hover {
-      box-shadow: var(--blue) 16px 0px, 
-                var(--yellow) 32px 0px,
-                var(--dark-green) 48px 0px;
+      box-shadow: var(--blue) 0px 10px, 
+                var(--yellow) 0px 20px,
+                var(--dark-green) 0px 30px;
                 transform: scale(1.02);
 }
 
@@ -141,7 +142,7 @@ a {
     text-decoration: none;
     font-size: 1.3rem;
     border-radius: 50px;
-    border: 5px solid var(--dark-green);
+    border: 4px solid var(--dark-green);
     font-weight: 700;
     transition: all .4s ease;
 }
@@ -201,9 +202,9 @@ footer a {
 
 footer a:hover{
     background-color: #fff;
-    box-shadow: var(--purple) -16px 0px, 
-                var(--blue) -32px 0px,
-                var(--yellow) -48px 0px;
+    box-shadow: var(--purple) -12px 0px, 
+                var(--blue) -24px 0px,
+                var(--yellow) -36px 0px;
                 transform: scale(1.02);
 }
 

@@ -1,4 +1,4 @@
-//https://dlinq.middcreate.net/wp-json/wp/v2/posts/?tags=358
+//https://dlinq.middcreate.net/wp-json/wp/v2/posts/?categories=402
 
 //from https://stackoverflow.com/questions/14341156/calculating-page-load-time-in-javascript
 window.onload = function () {
@@ -12,7 +12,8 @@ window.onload = function () {
 
 function getDetoxPosts(){	
 	const destination = document.querySelector('#destination');
-	const dataUrl = 'json/detox.json';
+	const dataUrl = 'json/detox.json?nocache=' + (new Date()).getTime();
+  console.log(dataUrl);
 	fetch(dataUrl)
   .then(function(response) {
   // Convert to JSON
@@ -23,7 +24,7 @@ function getDetoxPosts(){
   // GOOD
   data.forEach(function (value, i) {
      let title = value.title.rendered;
-     let cleanTitle = title.replace('DD ', '');
+     let cleanTitle = title.replace('Digital Detox 2023/', '');
      let excerpt = value.excerpt.rendered;
      let postId = value.id;
      destination.innerHTML = destination.innerHTML + `<li><a href="./post.html?id=${postId}">${cleanTitle}</a></li>`;

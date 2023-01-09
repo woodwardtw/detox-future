@@ -25,14 +25,14 @@ function getDetoxPost(){
      if ( urlId == postId){
         let title = value.title.rendered;
         let body = value.content.rendered;
-        let action = value.acf.take_action;
-        let read = value.acf.keep_reading;
+        // let action = value.acf.take_action;
+        // let read = value.acf.keep_reading;
         let author = value.detox_author;
         document.querySelector('#post-title').innerHTML = title;
         //document.querySelector('#author').innerHTML = 'By ' + author;
         document.querySelector('#post-body').innerHTML = body;
-        document.querySelector('#action').innerHTML = `<h2>Take Action</h2>${action}`;
-        document.querySelector('#read').innerHTML = `<h2>Read More</h2>${read}`;
+        // document.querySelector('#action').innerHTML = `<h2>Take Action</h2>${action}`;
+        // document.querySelector('#read').innerHTML = `<h2>Read More</h2>${read}`;
      }
      
 	});

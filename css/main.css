@@ -10,7 +10,6 @@
     --yellow: #f2a53b;
 }
 
-
 body,
 ul,
 ol,
@@ -80,7 +79,7 @@ a {
 }
 
 .col-two {
-    width: 400px;
+    width: 450px;
 }
 
 #destination {
@@ -97,7 +96,7 @@ a {
 .explore a {
     margin: 55px 0;
     transition: all ease .6s;
-    padding: 20px 0px 20px 40px;
+    padding: 40px;
     border: 3px solid var(--purple);
     border-radius: 120px;
     color: var(--purple);
